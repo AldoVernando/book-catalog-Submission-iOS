@@ -13,6 +13,8 @@
 		24F25A85244C385F00345541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F25A83244C385F00345541 /* Main.storyboard */; };
 		24F25A87244C386200345541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F25A86244C386200345541 /* Assets.xcassets */; };
 		24F25A8A244C386200345541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F25A88244C386200345541 /* LaunchScreen.storyboard */; };
+		24F25A95244C3DC300345541 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A94244C3DC300345541 /* DetailViewController.swift */; };
+		24F25A97244C3DCD00345541 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A96244C3DCD00345541 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		24F25A86244C386200345541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24F25A89244C386200345541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24F25A8B244C386200345541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F25A94244C3DC300345541 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		24F25A96244C3DCD00345541 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		24F25A7C244C385F00345541 /* book catalog */ = {
 			isa = PBXGroup;
 			children = (
+				24F25A91244C388200345541 /* Models */,
+				24F25A92244C388800345541 /* Views */,
+				24F25A93244C388F00345541 /* Controllers */,
 				24F25A7D244C385F00345541 /* AppDelegate.swift */,
 				24F25A7F244C385F00345541 /* SceneDelegate.swift */,
-				24F25A81244C385F00345541 /* ViewController.swift */,
-				24F25A83244C385F00345541 /* Main.storyboard */,
 				24F25A86244C386200345541 /* Assets.xcassets */,
 				24F25A88244C386200345541 /* LaunchScreen.storyboard */,
 				24F25A8B244C386200345541 /* Info.plist */,
 			);
 			path = "book catalog";
+			sourceTree = "<group>";
+		};
+		24F25A91244C388200345541 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24F25A92244C388800345541 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24F25A83244C385F00345541 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24F25A93244C388F00345541 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24F25A81244C385F00345541 /* ViewController.swift */,
+				24F25A94244C3DC300345541 /* DetailViewController.swift */,
+				24F25A96244C3DCD00345541 /* AboutViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +171,8 @@
 				24F25A82244C385F00345541 /* ViewController.swift in Sources */,
 				24F25A7E244C385F00345541 /* AppDelegate.swift in Sources */,
 				24F25A80244C385F00345541 /* SceneDelegate.swift in Sources */,
+				24F25A97244C3DCD00345541 /* AboutViewController.swift in Sources */,
+				24F25A95244C3DC300345541 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "book catalog/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aldovernando.book-catalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "book catalog/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aldovernando.book-catalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

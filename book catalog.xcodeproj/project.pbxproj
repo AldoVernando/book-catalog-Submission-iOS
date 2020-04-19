@@ -15,6 +15,10 @@
 		24F25A8A244C386200345541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F25A88244C386200345541 /* LaunchScreen.storyboard */; };
 		24F25A95244C3DC300345541 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A94244C3DC300345541 /* DetailViewController.swift */; };
 		24F25A97244C3DCD00345541 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A96244C3DCD00345541 /* AboutViewController.swift */; };
+		24F25A99244C42FC00345541 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A98244C42FC00345541 /* Book.swift */; };
+		24F25A9B244C453300345541 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A9A244C453300345541 /* BookData.swift */; };
+		24F25A9E244C497700345541 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A9C244C497700345541 /* BookTableViewCell.swift */; };
+		24F25A9F244C497700345541 /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F25A9D244C497700345541 /* BookTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		24F25A8B244C386200345541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24F25A94244C3DC300345541 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		24F25A96244C3DCD00345541 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		24F25A98244C42FC00345541 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		24F25A9A244C453300345541 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
+		24F25A9C244C497700345541 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		24F25A9D244C497700345541 /* BookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,8 @@
 		24F25A91244C388200345541 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				24F25A98244C42FC00345541 /* Book.swift */,
+				24F25A9A244C453300345541 /* BookData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -83,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				24F25A83244C385F00345541 /* Main.storyboard */,
+				24F25A9D244C497700345541 /* BookTableViewCell.xib */,
+				24F25A9C244C497700345541 /* BookTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F25A9F244C497700345541 /* BookTableViewCell.xib in Resources */,
 				24F25A8A244C386200345541 /* LaunchScreen.storyboard in Resources */,
 				24F25A87244C386200345541 /* Assets.xcassets in Resources */,
 				24F25A85244C385F00345541 /* Main.storyboard in Resources */,
@@ -168,8 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F25A9E244C497700345541 /* BookTableViewCell.swift in Sources */,
 				24F25A82244C385F00345541 /* ViewController.swift in Sources */,
+				24F25A9B244C453300345541 /* BookData.swift in Sources */,
 				24F25A7E244C385F00345541 /* AppDelegate.swift in Sources */,
+				24F25A99244C42FC00345541 /* Book.swift in Sources */,
 				24F25A80244C385F00345541 /* SceneDelegate.swift in Sources */,
 				24F25A97244C3DCD00345541 /* AboutViewController.swift in Sources */,
 				24F25A95244C3DC300345541 /* DetailViewController.swift in Sources */,

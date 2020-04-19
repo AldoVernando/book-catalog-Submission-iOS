@@ -15,51 +15,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zOi-ee-VjD">
-                                <rect key="frame" x="87" y="170" width="261" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="zOi-ee-VjD">
+                                <rect key="frame" x="100" y="170" width="214" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="pGv-HF-b3n"/>
                                     <constraint firstAttribute="height" constant="200" id="zQC-Hu-fHA"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aldo Vernando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4B-Z2-aL1">
-                                <rect key="frame" x="16" y="386" width="403" height="30"/>
+                                <rect key="frame" x="16" y="386" width="382" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aldo.vernando@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrM-Ie-JxP">
-                                <rect key="frame" x="16" y="460" width="403" height="24"/>
+                                <rect key="frame" x="16" y="460" width="382" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Github" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOW-dg-TcV">
-                                <rect key="frame" x="30" y="514" width="375" height="24"/>
+                                <rect key="frame" x="30" y="514" width="354" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="github.com/AldoVernando" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TX-bd-Sm0">
-                                <rect key="frame" x="30" y="548" width="375" height="24"/>
+                                <rect key="frame" x="30" y="548" width="354" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LinkedIn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fku-kv-8UO">
-                                <rect key="frame" x="30" y="592" width="375" height="24"/>
+                                <rect key="frame" x="30" y="592" width="354" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="linkedin.com/in/aldo-vernando-b13921164" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJA-8P-fRz">
-                                <rect key="frame" x="30" y="626" width="375" height="24"/>
+                                <rect key="frame" x="30" y="626" width="354" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Application Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZm-RM-hIN">
-                                <rect key="frame" x="16" y="426" width="403" height="24"/>
+                                <rect key="frame" x="16" y="426" width="382" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -74,10 +73,10 @@
                             <constraint firstAttribute="trailing" secondItem="LJA-8P-fRz" secondAttribute="trailing" constant="30" id="B1c-Oc-gLM"/>
                             <constraint firstItem="fHu-U6-XPB" firstAttribute="trailing" secondItem="RZm-RM-hIN" secondAttribute="trailing" constant="16" id="CmO-5v-R8B"/>
                             <constraint firstItem="zOi-ee-VjD" firstAttribute="top" secondItem="fHu-U6-XPB" secondAttribute="top" constant="30" id="GFB-Bx-a8O"/>
+                            <constraint firstItem="fHu-U6-XPB" firstAttribute="trailing" secondItem="zOi-ee-VjD" secondAttribute="trailing" constant="100" id="L1Y-T9-fbk"/>
                             <constraint firstItem="RZm-RM-hIN" firstAttribute="top" secondItem="h4B-Z2-aL1" secondAttribute="bottom" constant="10" id="Ldk-Fl-RTu"/>
                             <constraint firstItem="fHu-U6-XPB" firstAttribute="trailing" secondItem="ZrM-Ie-JxP" secondAttribute="trailing" constant="16" id="O7A-dK-vzj"/>
                             <constraint firstItem="AOW-dg-TcV" firstAttribute="leading" secondItem="fHu-U6-XPB" secondAttribute="leading" constant="30" id="Q6y-nL-Z6c"/>
-                            <constraint firstItem="fHu-U6-XPB" firstAttribute="trailing" secondItem="zOi-ee-VjD" secondAttribute="trailing" constant="87" id="TPY-3b-hVh"/>
                             <constraint firstItem="ZrM-Ie-JxP" firstAttribute="leading" secondItem="fHu-U6-XPB" secondAttribute="leading" constant="16" id="Vqp-sU-Vh7"/>
                             <constraint firstItem="5TX-bd-Sm0" firstAttribute="top" secondItem="AOW-dg-TcV" secondAttribute="bottom" constant="10" id="XQn-v0-HkB"/>
                             <constraint firstItem="fHu-U6-XPB" firstAttribute="trailing" secondItem="h4B-Z2-aL1" secondAttribute="trailing" constant="16" id="abq-PD-aUP"/>
@@ -89,12 +88,15 @@
                             <constraint firstItem="fku-kv-8UO" firstAttribute="top" secondItem="5TX-bd-Sm0" secondAttribute="bottom" constant="20" id="loV-Nv-C6b"/>
                             <constraint firstItem="LJA-8P-fRz" firstAttribute="leading" secondItem="fHu-U6-XPB" secondAttribute="leading" constant="30" id="ohH-gU-QnL"/>
                             <constraint firstItem="5TX-bd-Sm0" firstAttribute="leading" secondItem="fHu-U6-XPB" secondAttribute="leading" constant="30" id="ouj-vV-p7g"/>
-                            <constraint firstItem="zOi-ee-VjD" firstAttribute="leading" secondItem="fHu-U6-XPB" secondAttribute="leading" constant="87" id="uwu-uO-sBO"/>
+                            <constraint firstItem="zOi-ee-VjD" firstAttribute="leading" secondItem="fHu-U6-XPB" secondAttribute="leading" constant="100" id="uwu-uO-sBO"/>
                             <constraint firstItem="RZm-RM-hIN" firstAttribute="leading" secondItem="fHu-U6-XPB" secondAttribute="leading" constant="16" id="wSs-6K-kzx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fHu-U6-XPB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="WD2-nn-tXN"/>
+                    <connections>
+                        <outlet property="profileImage" destination="zOi-ee-VjD" id="hBs-l1-IgK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZ6-mG-79a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,7 +110,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="New-xG-StR">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" estimatedRowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="New-xG-StR">
                                 <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
@@ -125,11 +127,13 @@
                     <navigationItem key="navigationItem" title="Book Catalog" id="lT6-Xe-myC">
                         <barButtonItem key="rightBarButtonItem" image="person.circle" catalog="system" id="pjT-pr-JUg">
                             <connections>
+                                <action selector="aboutBtnPressed:" destination="BYZ-38-t0r" id="HqP-1u-wN1"/>
                                 <segue destination="mKs-Lq-wkn" kind="show" identifier="goToAbout" id="pxX-yK-D01"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="New-xG-StR" id="QjF-0K-iYD"/>
                         <segue destination="6CX-2g-n4Y" kind="show" identifier="goToDetail" id="AQm-Ih-gup"/>
                     </connections>
                 </viewController>
@@ -215,6 +219,13 @@
                         <viewLayoutGuide key="safeArea" id="oRQ-Nl-ngL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Book's Detail" id="NUB-3X-NTj"/>
+                    <connections>
+                        <outlet property="bookAuthor" destination="VbV-kM-GpW" id="mq7-Ym-dT4"/>
+                        <outlet property="bookImage" destination="78n-63-0JU" id="ff7-do-fvl"/>
+                        <outlet property="bookReleased" destination="G0J-Wd-EKC" id="3UH-eu-zVj"/>
+                        <outlet property="bookSynopsis" destination="7vz-7n-5RA" id="AwZ-9f-93i"/>
+                        <outlet property="bookTitle" destination="DgG-5h-iAV" id="Xak-Hk-Voe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="il4-aT-cyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,6 +239,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JCa-Qp-2X2">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.35070735320000002" green="0.78585025379999995" blue="0.72760703039999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" red="0.35070735320000002" green="0.78585025379999995" blue="0.72760703039999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
@@ -243,6 +257,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="me" width="1478" height="1108"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>

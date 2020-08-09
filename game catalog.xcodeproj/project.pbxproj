@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2425E36A24B1B5F800D3B23E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425E36924B1B5F800D3B23E /* NetworkManager.swift */; };
+		2429FB8524DFC381002CBF8E /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429FB8424DFC381002CBF8E /* RealmManager.swift */; };
+		2429FB8B24DFE363002CBF8E /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429FB8A24DFE363002CBF8E /* FavoriteViewController.swift */; };
+		2429FB8D24DFE750002CBF8E /* GameFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429FB8C24DFE750002CBF8E /* GameFavorite.swift */; };
+		2429FB8F24DFF984002CBF8E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429FB8E24DFF984002CBF8E /* TabBarViewController.swift */; };
 		24F25A7E244C385F00345541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A7D244C385F00345541 /* AppDelegate.swift */; };
 		24F25A80244C385F00345541 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A7F244C385F00345541 /* SceneDelegate.swift */; };
 		24F25A82244C385F00345541 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F25A81244C385F00345541 /* ViewController.swift */; };
@@ -26,6 +30,10 @@
 /* Begin PBXFileReference section */
 		14798B81F2D3A84506D7DCFD /* Pods_game_catalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_game_catalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2425E36924B1B5F800D3B23E /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2429FB8424DFC381002CBF8E /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		2429FB8A24DFE363002CBF8E /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		2429FB8C24DFE750002CBF8E /* GameFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFavorite.swift; sourceTree = "<group>"; };
+		2429FB8E24DFF984002CBF8E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		24F25A7A244C385F00345541 /* game catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "game catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F25A7D244C385F00345541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24F25A7F244C385F00345541 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +72,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		2429FB8324DFC32F002CBF8E /* Local Storage */ = {
+			isa = PBXGroup;
+			children = (
+				2429FB8424DFC381002CBF8E /* RealmManager.swift */,
+			);
+			path = "Local Storage";
+			sourceTree = "<group>";
+		};
 		24F25A71244C385F00345541 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,7 @@
 		24F25A7C244C385F00345541 /* game catalog */ = {
 			isa = PBXGroup;
 			children = (
+				2429FB8324DFC32F002CBF8E /* Local Storage */,
 				2425E36624B1B52000D3B23E /* Network */,
 				24F25A91244C388200345541 /* Models */,
 				24F25A92244C388800345541 /* Views */,
@@ -103,6 +120,7 @@
 			children = (
 				24F25A98244C42FC00345541 /* Game.swift */,
 				24F25A9A244C453300345541 /* GameList.swift */,
+				2429FB8C24DFE750002CBF8E /* GameFavorite.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +141,8 @@
 				24F25A81244C385F00345541 /* ViewController.swift */,
 				24F25A94244C3DC300345541 /* DetailViewController.swift */,
 				24F25A96244C3DCD00345541 /* AboutViewController.swift */,
+				2429FB8A24DFE363002CBF8E /* FavoriteViewController.swift */,
+				2429FB8E24DFF984002CBF8E /* TabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,13 +280,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2429FB8B24DFE363002CBF8E /* FavoriteViewController.swift in Sources */,
+				2429FB8524DFC381002CBF8E /* RealmManager.swift in Sources */,
 				24F25A9E244C497700345541 /* GameTableViewCell.swift in Sources */,
+				2429FB8D24DFE750002CBF8E /* GameFavorite.swift in Sources */,
 				24F25A82244C385F00345541 /* ViewController.swift in Sources */,
 				2425E36A24B1B5F800D3B23E /* NetworkManager.swift in Sources */,
 				24F25A9B244C453300345541 /* GameList.swift in Sources */,
 				24F25A7E244C385F00345541 /* AppDelegate.swift in Sources */,
 				24F25A99244C42FC00345541 /* Game.swift in Sources */,
 				24F25A80244C385F00345541 /* SceneDelegate.swift in Sources */,
+				2429FB8F24DFF984002CBF8E /* TabBarViewController.swift in Sources */,
 				24F25A97244C3DCD00345541 /* AboutViewController.swift in Sources */,
 				24F25A95244C3DC300345541 /* DetailViewController.swift in Sources */,
 			);

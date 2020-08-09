@@ -1,36 +1,60 @@
 //
-//  ViewController.swift
+//  FavoriteViewController.swift
 //  game catalog
 //
-//  Created by Aldo Vernando on 4/19/20.
+//  Created by Aldo Vernando on 8/9/20.
 //  Copyright © 2020 aldovernando. All rights reserved.
 //
 
 import UIKit
-import SDWebImage
 
-class ViewController: UIViewController {
+class FavoriteViewController: UIViewController {
 
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var message: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    let network = NetworkManager()
-    var games: [Game] = []
+    var games: [GameFavorite] = []
     var gameId: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.network.getGameList(page: 1, completion: { games in
-            self.games = games
-            self.tableView.reloadData()
-        })
-       
-        searchBar.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 162
         
         tableView.register(UINib(nibName: "GameTableViewCell", bundle: nil), forCellReuseIdentifier: "gameCell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getFavorite()
+    }
+
+    func getFavorite() {
+        let favs = RealmManager.get(data: GameFavorite.self)
+        games.removeAll()
+        
+        if favs.count > 0 {
+            
+            tableView.isHidden = false
+            message.isHidden = true
+            
+            for fav in favs {
+                self.games.append(fav as! GameFavorite)
+            }
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
+        } else {
+            
+            message.isHidden = false
+            tableView.isHidden = true
+        }
+        
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,13 +67,13 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
 }
 
 
 // MARK: UITableView
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    
+extension FavoriteViewController: UITableViewDelegate, UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return games.count
     }
@@ -60,9 +84,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let game = games[indexPath.row]
         
-        if let imageURL = game.background_image {
-            cell.cover_image.sd_setImage(with: URL(string: imageURL))
-        }
+        cell.cover_image.sd_setImage(with: URL(string: game.background_image))
         cell.title.text = game.name
         cell.released.text = game.released
         cell.rating.text = String(game.rating)
@@ -74,24 +96,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         gameId = games[indexPath.row].id
         performSegue(withIdentifier: "goToDetail", sender: self)
-    }
-    
-}
-
-
-// MARK: UISearchBarDelegate
-extension ViewController: UISearchBarDelegate {
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
-        self.network.getGamesWithQuery(query: searchText) { games in
-            self.games = games
-            self.tableView.reloadData()
-        }
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        view.endEditing(true)
     }
     
 }

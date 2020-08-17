@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let network = NetworkManager()
     var games: [Game] = []
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         
         self.network.getGameList(page: 1, completion: { games in
             self.games = games
+            self.activityIndicator.stopAnimating()
             self.tableView.reloadData()
         })
        
@@ -56,18 +58,23 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as! GameTableViewCell
+        let gameCell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as? GameTableViewCell
         
         let game = games[indexPath.row]
         
-        if let imageURL = game.background_image {
-            cell.cover_image.sd_setImage(with: URL(string: imageURL))
-        }
-        cell.title.text = game.name
-        cell.released.text = game.released
-        cell.rating.text = String(game.rating)
+        if let cell = gameCell {
         
-        return cell
+            if let imageURL = game.background_image {
+                cell.cover_image.sd_setImage(with: URL(string: imageURL))
+            }
+            cell.title.text = game.name
+            cell.released.text = game.released
+            cell.rating.text = String(game.rating)
+            
+            return cell
+        }
+        
+        return UITableViewCell.init()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

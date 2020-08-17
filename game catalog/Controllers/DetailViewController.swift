@@ -79,6 +79,7 @@ class DetailViewController: UIViewController {
         }
         
         RealmManager.insert(data: gameFav)
+        self.tempFav = gameFav
         let barButton = UIBarButtonItem(customView: removeFavBtn)
         self.navigationItem.rightBarButtonItems = [barButton]
         
@@ -107,8 +108,11 @@ class DetailViewController: UIViewController {
             if let id = gameId {
 
                 for fav in favs {
-                    if (fav as! GameFavorite).id == id {
-                        tempFav = fav as! GameFavorite
+                    
+                    guard let gameFav = (fav as? GameFavorite) else { return }
+                    
+                    if gameFav.id == id {
+                        tempFav = gameFav
                         let barButton = UIBarButtonItem(customView: removeFavBtn)
                         self.navigationItem.rightBarButtonItems = [barButton]
                         return

@@ -40,7 +40,8 @@ class FavoriteViewController: UIViewController {
             message.isHidden = true
             
             for fav in favs {
-                self.games.append(fav as! GameFavorite)
+                guard let gameFav = fav as? GameFavorite else { return }
+                self.games.append(gameFav)
             }
             
             DispatchQueue.main.async {
@@ -80,16 +81,21 @@ extension FavoriteViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as! GameTableViewCell
+        let gameCell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as? GameTableViewCell
         
         let game = games[indexPath.row]
         
-        cell.cover_image.sd_setImage(with: URL(string: game.background_image))
-        cell.title.text = game.name
-        cell.released.text = game.released
-        cell.rating.text = String(game.rating)
+        if let cell = gameCell {
         
-        return cell
+            cell.cover_image.sd_setImage(with: URL(string: game.background_image))
+            cell.title.text = game.name
+            cell.released.text = game.released
+            cell.rating.text = String(game.rating)
+            
+            return cell
+        }
+        
+        return UITableViewCell.init()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

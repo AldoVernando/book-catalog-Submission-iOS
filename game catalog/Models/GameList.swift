@@ -6,8 +6,6 @@
 //  Copyright © 2020 aldovernando. All rights reserved.
 //
 
-import Foundation
-
 class GameList: Codable {
     
     var next: String = ""

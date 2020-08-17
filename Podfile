@@ -8,5 +8,6 @@ target 'game catalog' do
   # Pods for game catalog
   pod 'Alamofire'
   pod 'SDWebImage'
+  pod 'RealmSwift'
 
 end

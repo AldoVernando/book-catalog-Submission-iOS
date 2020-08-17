@@ -6,7 +6,6 @@
 //  Copyright © 2020 aldovernando. All rights reserved.
 //
 
-import Foundation
 import RealmSwift
 
 class GameFavorite: Object {

@@ -117,6 +117,10 @@
                                 <rect key="frame" x="0.0" y="196" width="414" height="617"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" id="aOs-29-wqp">
+                                <rect key="frame" x="0.0" y="426" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                             <searchBar contentMode="redraw" placeholder="Search Game Title" translatesAutoresizingMaskIntoConstraints="NO" id="SHC-iy-cee">
                                 <rect key="frame" x="0.0" y="140" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -143,6 +147,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="aOs-29-wqp" id="0sU-vA-Auu"/>
                         <outlet property="searchBar" destination="SHC-iy-cee" id="rpl-hL-lfM"/>
                         <outlet property="tableView" destination="New-xG-StR" id="QjF-0K-iYD"/>
                         <segue destination="6CX-2g-n4Y" kind="show" identifier="goToDetail" id="AQm-Ih-gup"/>
